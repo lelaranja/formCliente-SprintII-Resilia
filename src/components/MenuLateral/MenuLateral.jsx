@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import S from "./MenuLateral.module.css";
 
 const MenuLateral = () => {
   return (
-    <div>MenuLateral</div>
-  )
-}
+    <div className={S.container}>
+      <aside>
+        <nav>
+          <Link className={S.link} to={"/"}>Home</Link>
+          <Link className={S.link} to={"/clientes"}>Clientes</Link>
+          <Link className={S.link} to={"/cadastro"}>Cadastro</Link>
+        </nav>
+      </aside>
+    </div>
+  );
+};
 
-export default MenuLateral
+export default MenuLateral;

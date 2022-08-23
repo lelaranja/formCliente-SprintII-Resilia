@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+.container {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  font-family: "Bungee", cursive;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container aside {
+  width: 30%;
+  min-width: 200px;
+  height: 150%;
+  background-color: #457b9d;
+  padding: 20px;
+}
+
+.link,
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #003049;
+  background-color: #457b9d;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.link:hover {
+  scale: 1.12;
+  color: #a8dadc;
+}
