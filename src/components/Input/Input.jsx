@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Input = ({tipo,valor, obrigatorio, onChange}) => {
+const Input = ({tipo,valor, obrigatorio, onChange, descricao}) => {
   return (
-    <input value={valor} type={tipo} required={obrigatorio} onChange={onChange}/>
+    <input value={valor} type={tipo} required={obrigatorio} onChange={onChange} placeholder={descricao}/>
   )
 }
 
