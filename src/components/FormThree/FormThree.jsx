@@ -11,7 +11,7 @@ const FormThree = () => {
         <Label texto="Data de nascimento" />
         <Input tipo="date" obrigatorio={true} descricao="dd/mm/aaaa"/>
         <Label texto="CPF" />
-        <Input tipo="number" obrigatorio={true} descricao="xxx.xxx.xxx-xx"  maxlength="11" minlength="11"/>
+        <Input tipo="text" obrigatorio={true} descricao="xxx.xxx.xxx-xx" tamanhoMin="11" tamanhoMax="11"/>
         <Label texto="Renda Mensal (R$)" />
         <Input tipo="number" obrigatorio={true} descricao="Valor em reais"/>
         <Button type='Submit' texto="Salvar"/>
