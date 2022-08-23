@@ -3,7 +3,7 @@ import S from './Home.module.css'
 
 const Home = () => {
   return (
-    <div className={S.idHome}>
+    <div className={S.container}>
       <h1>Sistema de cadastro de clientes</h1>
     </div>
   )
