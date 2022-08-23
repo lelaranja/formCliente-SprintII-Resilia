@@ -1,11 +1,11 @@
 import './App.css'
-import FormTwo from './components/FormTwo/FormTwo'
+import FormThree from './components/FormThree/FormThree'
 
 function App() {
 
   return (
     <div className="App">
-      <FormTwo/>
+      <FormThree/>
     </div>
   )
 }
