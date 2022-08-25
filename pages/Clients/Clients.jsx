@@ -1,8 +1,11 @@
 import React from 'react'
+import FormOne from './FormOne/FormOne'
 
 const Clients = () => {
   return (
-    <div>Clients</div>
+    <div>
+      <FormOne/>
+    </div>
   )
 }
 
