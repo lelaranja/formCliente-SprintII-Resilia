@@ -1,13 +1,13 @@
-import React from 'react'
-import S from './Cadastro.module.css'
-import FormOne from '../../src/components/FormOne/FormOne'
+import React from "react";
+import S from "./Cadastro.module.css";
+import FormOne from "../../src/components/FormOne/FormOne";
 
 const Registration = () => {
   return (
     <div className={S.container}>
-      <FormOne/>
+      <FormOne />
     </div>
-  )
-}
+  );
+};
 
-export default Registration
+export default Registration;
