@@ -1,17 +1,8 @@
 .container {
   height: calc(100vh - 70px);
+  width: 1800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.container button {
-  height: 45px;
-  border-radius: 10px;
-}
-
-.container input {
-  height: 45px;
-  border-radius: 10px;
 }

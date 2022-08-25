@@ -20,7 +20,7 @@
 
 .formMain input {
   width: 300px;
-  height: 30px;
+  height: 40px;
   border-radius: 3px;
   box-shadow: none;
   background-color: #f4f3ee;
@@ -34,6 +34,8 @@
   margin-top: 10px;
   background-color: #e63946;
   font-weight: 700;
+  height: 50px;
+  border-radius: 10px;
   font-size: 15px;
   border: none;
 }
