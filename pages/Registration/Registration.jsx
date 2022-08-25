@@ -1,10 +1,11 @@
 import React from 'react'
-import Button from '../../src/components/Button/Button'
+import S from './Cadastro.module.css'
+import FormOne from '../../src/components/FormOne/FormOne'
 
 const Registration = () => {
   return (
-    <div>
-      <Button texto='Teste'/>
+    <div  className={S.container}>
+      <FormOne/>
     </div>
   )
 }
