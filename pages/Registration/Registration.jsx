@@ -4,7 +4,7 @@ import FormOne from '../../src/components/FormOne/FormOne'
 
 const Registration = () => {
   return (
-    <div  className={S.container}>
+    <div className={S.container}>
       <FormOne/>
     </div>
   )

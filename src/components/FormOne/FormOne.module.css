@@ -8,6 +8,7 @@
   padding: 80px;
   border-radius: 30px;
   background-color: #fdf0d5;
+  font-size: 17px;
 }
 
 .formMain form {
@@ -18,9 +19,9 @@
 }
 
 .formMain input {
-  width: 250px;
+  width: 300px;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: none;
   background-color: #f4f3ee;
 }
@@ -32,4 +33,14 @@
 .formMain button {
   margin-top: 10px;
   background-color: #e63946;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+}
+
+.formMain button:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #c1121f;
+  color: #f4f3ee;
 }
