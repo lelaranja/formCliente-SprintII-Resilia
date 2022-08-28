@@ -14,7 +14,7 @@ const FormOne = () => {
         <Label texto="Endereço 1" />
         <TextArea obrigatorio={true} descricao="Entre com o primeiro endereço"/>
         <Label texto="Endereço 2" />
-        <TextArea descricao="Entre com o segundo endereço"/>
+        <TextArea obrigatorio={true} descricao="Entre com o segundo endereço"/>
         <Button type='Submit' texto="Próximo"/>
         </form>
     </div>
