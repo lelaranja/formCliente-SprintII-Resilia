@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+.divPrincipal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    ". . . "
+    ". . . "
+    ". . . ";
+  justify-content: space-evenly;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.dadosForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  background-color: #ff8a65;
+  padding: 15px;
+  border-radius: 10px;
+}
+.dadosForm small {
+  font-weight: 500;
+}

@@ -28,9 +28,6 @@ const FormProvider = ({ children }) => {
 
     function handleClick(e) {
         e.preventDefault();
-
-        console.log(dadosForm);
-
         setLista([...lista, dadosForm]);
 
         setDadosForm({
@@ -47,25 +44,15 @@ const FormProvider = ({ children }) => {
         });
     }
 
-    const [view, setView] = useState("form1");
-    function handleViewFst() {
-        setView("form1");
-    }
-    function handleViewScd() {
-        setView("form2");
-    }
-    function handleViewTrd() {
-        setView("form3");
-    }
 
     const contexto = {
         dadosForm: dadosForm,
         lista: lista,
         handleChange: handleChange,
         handleClick: handleClick,
-        handleViewFst: handleViewFst,
-        handleViewScd: handleViewScd,
-        handleViewTrd: handleViewTrd,
+        // handleViewFst: handleViewFst,
+        // handleViewScd: handleViewScd,
+        // handleViewTrd: handleViewTrd,
     };
 
     return (
