@@ -16,7 +16,7 @@ const FormOne = () => {
         <Input tipo="email" obrigatorio={true} descricao="E-mail do cliente" />
         <Label texto="Telefone" />
         <Input tipo="tel" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" obrigatorio={true} descricao="(xx) xxxx-xxxx" />
-        <Button type='Submit' texto="Próximo" />
+        <Button type='button' texto="Próximo" />
       </form>
     </div>
   )

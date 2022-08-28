@@ -25,7 +25,7 @@ const Registration = () => {
       {/* {view == "form1" && <FormOne onClick={handleViewScd} />}
       {view == "form2" && <FormTwo onClick={handleViewTrd} />}
       {view == "form3" && <FormThree />} */}
-      <FormTwo />
+      <FormThree />
     </div>
   );
 };
