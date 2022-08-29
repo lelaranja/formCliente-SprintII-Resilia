@@ -19,7 +19,7 @@ const Clients = () => {
             telefone={lista.telefone}
             cep={lista.cep}
             enderecoI={lista.enderecoI}
-            enderecoII={lista.nderecoII}
+            enderecoII={lista.enderecoII}
             dataNascimento={lista.dataNascimento}
             cpf={lista.cpf}
             rendaMensal={lista.rendaMensal}
