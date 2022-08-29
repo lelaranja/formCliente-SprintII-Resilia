@@ -9,13 +9,14 @@ const Registration = () => {
 
   const { page } = useContext(FormContext)
 
+
   return (
-    <div className={S.container}>
+    < div className={S.container} >
       <h1>Formulário de cadastro</h1>
       {page === 0 && <FormOne />}
       {page === 1 && <FormTwo />}
       {page === 2 && <FormThree />}
-    </div>
+    </div >
   );
 };
 
