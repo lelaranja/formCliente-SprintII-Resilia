@@ -26,17 +26,17 @@ const FormProvider = ({ children }) => {
         });
     }
 
-    let nextPage = (e) => {
+    function nextPage(e) {
         e.preventDefault()
         setPage(page + 1)
     }
 
-    let backPage = (e) => {
+    function backPage(e) {
         e.preventDefault()
         setPage(page - 1)
     }
 
-    let handleClick = (e) => {
+    function handleClick(e) {
         e.preventDefault()
         setLista([...lista, dadosForm])
         setDadosForm({

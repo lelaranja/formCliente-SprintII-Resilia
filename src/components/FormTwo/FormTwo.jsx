@@ -4,7 +4,6 @@ import Label from '../Label/Label'
 import Input from '../Input/Input'
 import Button from '../Button/Button'
 import S from './FormTwo.module.css'
-import TextArea from '../TextArea/TextArea'
 
 
 const FormOne = () => {
@@ -21,13 +20,13 @@ const FormOne = () => {
         </fieldset>
         <fieldset>
           <Label texto="Endereço 1" />
-          <TextArea obrigatorio={true} descricao="Entre com o primeiro endereço" valor={dadosForm.endereco1}
-            handleChange={(e) => handleChange(e, 'endereco1')} />
+          <Input obrigatorio={true} descricao="Entre com o primeiro endereço" valor={dadosForm.enderecoI}
+            handleChange={(e) => handleChange(e, 'enderecoI')} />
         </fieldset>
         <fieldset>
           <Label texto="Endereço 2" />
-          <TextArea obrigatorio={true} descricao="Entre com o segundo endereço" valor={dadosForm.endereco2}
-            handleChange={(e) => handleChange(e, 'endereco2')} />
+          <Input obrigatorio={true} descricao="Entre com o segundo endereço" valor={dadosForm.enderecoII}
+            handleChange={(e) => handleChange(e, 'enderecoII')} />
         </fieldset>
         <Button texto="Anterior" onClick={backPage} />
         <Button texto="Próximo" onClick={nextPage} />
