@@ -17,8 +17,8 @@ const FormProvider = ({ children }) => {
     });
 
     const [lista, setLista] = useState([]);
+    const [page, setPage] = useState(0)
 
-    //6 - Criar a função que altera o estado
     function handleChange(e, nomeDaChave) {
         setDadosForm({
             ...dadosForm,
@@ -26,10 +26,19 @@ const FormProvider = ({ children }) => {
         });
     }
 
-    function handleClick(e) {
-        e.preventDefault();
-        setLista([...lista, dadosForm]);
+    let nextPage = (e) => {
+        e.preventDefault()
+        setPage(page + 1)
+    }
 
+    let backPage = (e) => {
+        e.preventDefault()
+        setPage(page - 1)
+    }
+
+    let handleClick = (e) => {
+        e.preventDefault()
+        setLista([...lista, dadosForm])
         setDadosForm({
             nome: "",
             sobrenome: "",
@@ -41,18 +50,17 @@ const FormProvider = ({ children }) => {
             dataNascimento: "",
             cpf: "",
             rendaMensal: "",
-        });
+        })
+        setPage(0)
     }
-
 
     const contexto = {
         dadosForm: dadosForm,
         lista: lista,
+        nextPage: nextPage,
+        backPage: backPage,
         handleChange: handleChange,
         handleClick: handleClick,
-        // handleViewFst: handleViewFst,
-        // handleViewScd: handleViewScd,
-        // handleViewTrd: handleViewTrd,
     };
 
     return (
