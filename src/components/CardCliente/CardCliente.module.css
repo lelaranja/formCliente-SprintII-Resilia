@@ -2,17 +2,13 @@
 
 .divPrincipal {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px 20px;
-  grid-template-areas:
-    ". . . "
-    ". . . "
-    ". . . ";
+  grid-template-columns: 400px 50px;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   justify-content: space-evenly;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
+  align-content: stretch;
+  align-items: stretch;
 }
 
 .dadosForm {
@@ -21,9 +17,14 @@
   align-items: flex-start;
   font-family: "Poppins", sans-serif;
   background-color: #ff8a65;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
 }
 .dadosForm small {
   font-weight: 500;
+}
+.dadosForm p {
+  font-family: "Bungee", cursive;
+  font-size: 15px;
+  color: #d62828;
 }

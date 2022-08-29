@@ -9,23 +9,25 @@ const Clients = () => {
   return (
     <div className={S.container}>
       <h1>Clientes</h1>
-      {lista.length > 0 ?
-        lista.map((lista, index) => (
-          <CardCliente
-            key={index}
-            nome={lista.nome}
-            sobrenome={lista.sobrenome}
-            email={lista.email}
-            telefone={lista.telefone}
-            cep={lista.cep}
-            enderecoI={lista.enderecoI}
-            enderecoII={lista.enderecoII}
-            dataNascimento={lista.dataNascimento}
-            cpf={lista.cpf}
-            rendaMensal={lista.rendaMensal}
-          />
-        ))
-        : <p>Nenhum cliente cadastrado</p>}
+      <div>
+        {lista.length > 0 ?
+          lista.map((lista, index) => (
+            <CardCliente
+              key={index}
+              nome={lista.nome}
+              sobrenome={lista.sobrenome}
+              email={lista.email}
+              telefone={lista.telefone}
+              cep={lista.cep}
+              enderecoI={lista.enderecoI}
+              enderecoII={lista.enderecoII}
+              dataNascimento={lista.dataNascimento}
+              cpf={lista.cpf}
+              rendaMensal={lista.rendaMensal}
+            />
+          ))
+          : <p className={S.nota}>Nenhum cliente cadastrado</p>}
+      </div>
     </div>
   )
 }
