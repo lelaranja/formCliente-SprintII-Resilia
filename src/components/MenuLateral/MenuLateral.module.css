@@ -11,6 +11,7 @@
   background-color: #457b9d;
   padding: 20px;
   text-align: center;
+  position: fixed;
 }
 
 .link,
