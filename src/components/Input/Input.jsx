@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Input = ({tipo,valor, obrigatorio, onChange, descricao, tamanhoMin,tamanhoMax}) => {
+const Input = ({ tipo, valor, obrigatorio, handleChange, descricao, tamanhoMin, tamanhoMax }) => {
   return (
-    <input value={valor} type={tipo} required={obrigatorio} onChange={onChange} placeholder={descricao} minLength={tamanhoMin} maxLength={tamanhoMax}/>
+    <input value={valor} type={tipo} required={obrigatorio} onChange={handleChange} placeholder={descricao} minLength={tamanhoMin} maxLength={tamanhoMax} />
   )
 }
 

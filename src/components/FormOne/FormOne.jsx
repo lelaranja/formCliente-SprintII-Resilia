@@ -32,7 +32,7 @@ const FormOne = () => {
           <Input tipo="tel" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" obrigatorio={true} descricao="(xx) xxxx-xxxx" valor={dadosForm.telefone}
             handleChange={(e) => handleChange(e, 'telefone')} />
         </fieldset>
-        <Button text="Próximo" onClick={nextPage} />
+        <Button texto="Próximo" onClick={nextPage} />
       </form>
     </div>
   )

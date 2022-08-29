@@ -46,3 +46,7 @@
   background-color: #c1121f;
   color: #f4f3ee;
 }
+
+fieldset {
+  border: none;
+}

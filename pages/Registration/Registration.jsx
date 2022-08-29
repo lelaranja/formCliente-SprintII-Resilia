@@ -9,7 +9,6 @@ const Registration = () => {
 
   const { page } = useContext(FormContext)
 
-
   return (
     < div className={S.container} >
       <h1>Formulário de cadastro</h1>

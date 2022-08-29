@@ -57,6 +57,7 @@ const FormProvider = ({ children }) => {
     const contexto = {
         dadosForm: dadosForm,
         lista: lista,
+        page: page,
         nextPage: nextPage,
         backPage: backPage,
         handleChange: handleChange,
