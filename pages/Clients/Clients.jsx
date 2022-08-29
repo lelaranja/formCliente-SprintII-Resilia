@@ -9,7 +9,7 @@ const Clients = () => {
   return (
     <div className={S.container}>
       <h1>Clientes</h1>
-      <div>
+      <div className={S.card}>
         {lista.length > 0 ?
           lista.map((lista, index) => (
             <CardCliente

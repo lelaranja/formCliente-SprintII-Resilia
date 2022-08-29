@@ -8,6 +8,14 @@
   align-items: center;
 }
 
+.card {
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 10px;
+}
+
 .container h1 {
   font-family: "Bungee", cursive;
   font-size: 50px;
